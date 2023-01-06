@@ -17,12 +17,12 @@
         <TextBox Name="EndTextBox" TextWrapping="Wrap" Text="1" DockPanel.Dock="Top" FontSize="22"/>
 
         <Label Content="Step (h):" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox Name="StepTextBox" TextWrapping="Wrap" Text="0" DockPanel.Dock="Top" FontSize="22"/>
+        <TextBox Name="StepTextBox" TextWrapping="Wrap" Text="0.1" DockPanel.Dock="Top" FontSize="22"/>
 
         <Label Content="y0:" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox Name="Y0TextBox" TextWrapping="Wrap" Text="0" DockPanel.Dock="Top" FontSize="22"/>
+        <TextBox Name="Y0TextBox" TextWrapping="Wrap" Text="2" DockPanel.Dock="Top" FontSize="22"/>
 
-        <Button Name="CauchyButton" Content="Integrate" FontFamily="Calibri" FontSize="28" DockPanel.Dock="Top" FontWeight="Bold"/>
+        <Button Name="CauchyButton" Content="Solve Cauchy problem" FontFamily="Calibri" FontSize="28" DockPanel.Dock="Top" FontWeight="Bold" Click="CauchyButton_Click"/>
         <ScrollViewer>
             <TextBlock Name="Result" Text="Result will be displayed here" FontFamily="Calibri" FontSize="22"/>
         </ScrollViewer>
