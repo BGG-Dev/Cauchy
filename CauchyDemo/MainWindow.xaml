@@ -1,0 +1,30 @@
+﻿<Window x:Class="CauchyDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CauchyDemo"
+        mc:Ignorable="d"
+        Title="Lab 4 by Bohdan Pylypchenko" Height="450" Width="800">
+    <DockPanel>
+        <Label Content="Function - right part(as C# expression):" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="FunctionTextBox" TextWrapping="Wrap" Text="(0.3 * 0.4 - x) / (0.3 * y)" DockPanel.Dock="Top" FontSize="22"/>
+
+        <Label Content="Interval start (a):" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="StartTextBox" TextWrapping="Wrap" Text="0" DockPanel.Dock="Top" FontSize="22"/>
+
+        <Label Content="Interval end (b):" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="EndTextBox" TextWrapping="Wrap" Text="1" DockPanel.Dock="Top" FontSize="22"/>
+
+        <Label Content="Step (h):" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="StepTextBox" TextWrapping="Wrap" Text="0.1" DockPanel.Dock="Top" FontSize="22"/>
+
+        <Label Content="y0:" FontFamily="Calibri" FontSize="22" DockPanel.Dock="Top" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="Y0TextBox" TextWrapping="Wrap" Text="2" DockPanel.Dock="Top" FontSize="22"/>
+
+        <Button Name="CauchyButton" Content="Solve Cauchy problem" FontFamily="Calibri" FontSize="28" DockPanel.Dock="Top" FontWeight="Bold" Click="CauchyButton_Click"/>
+        <ScrollViewer>
+            <TextBlock Name="Result" Text="Result will be displayed here" FontFamily="Calibri" FontSize="22"/>
+        </ScrollViewer>
+    </DockPanel>
+</Window>
